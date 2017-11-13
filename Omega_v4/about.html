@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Omega|O3 Capital</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <!--custom css-->
+  <style type="text/css">
+   #header
+{
+  background-color: transparent;
+  border:0px;
+}
+
+.navbar-inverse .navbar-nav>li>a
+{
+  color:black;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover 
+{
+  color:black;
+}
+
+#menu-option
+{
+  position: relative;
+  left:60%;
+  margin-left:-25%;
+  padding-left: 0px;
+  padding-top:2%;
+
+}
+
+#menu-option li
+{
+  
+  
+}
+
+#menu-icon 
+{
+  border:0px;
+  background-color: #A50022;
+  border-radius: 0px;
+  margin-top: 2%;
+
+}
+
+#myNavbar
+{
+  border:0px;
+  overflow: hidden;
+}
+
+.li_style {
+  margin-top: 0%;
+}
+
+/*!header snipper*/
+
+.snip1168 {
+  font-family: 'Lato';
+  font-weight: 300;
+  text-align: center;
+  text-transform: capitalize;
+    float:left;
+    
+ 
+}
+.snip1168 * {
+  box-sizing: border-box;
+}
+.snip1168 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 ;
+  padding: 0;
+}
+.snip1168 a {
+  /*padding: 0.5em 0;*/
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  letter-spacing: .02em;
+  text-decoration: none;
+}
+.snip1168 a:before,
+.snip1168 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1168 a:before {
+  top: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #A50022;
+}
+.snip1168 a:after {
+  left: 0;
+  top: 0;
+  /*padding: 0.5em 0;*/
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.snip1168 a:hover:before,
+.snip1168 .current a:before {
+  opacity: 1;
+  width: 80%;
+}
+.snip1168 a:hover:after,
+.snip1168 .current a:after {
+  max-width: 100%;
+}
+
+/* mobile View Menu*/
+#mobile-view-menu
+{
+  top:0%;
+  position: fixed;
+  background-color: #ffffff;
+  width:100%;
+  height:100%;
+  z-index: 1;
+}
+
+#mobile-view-menu ul
+{
+  margin-top: 10%;
+}
+
+#mobile-view-menu li
+{
+  
+  list-style: none;
+  text-align: center;
+  color:black;
+font-weight:bold;
+  line-height:75px;
+}
+
+#mobile-view-menu li a
+{
+  color:black;
+  text-decoration: none;
+}
+
+#menu-close
+{
+  font-size: 30px;
+  font-weight:300;
+  cursor: pointer;
+}
+
+
+
+
+#footer
+{
+  background-color: #FFFFFF;
+  font-family: lora;
+  width:100%;
+}
+
+#footer-left
+{
+  text-align: left;
+  padding: 2%;
+  font-size: 12px;
+}
+
+#footer-right
+{
+   padding: 2%;
+  text-align: right;
+  font-size: 12px;
+}
+
+
+/* this page css*/
+    .para1
+  {
+    margin-top:2%;
+    font-size:18px;
+    text-align:center
+  }
+
+  .para{
+    font-weight:900;
+    font-size:18px;
+    text-align:center;
+    color:#C86567;
+    margin-bottom:1%
+  }
+/*============================================
+            Media Quries
+=============================================*/
+@media only screen and (max-width: 1200px) 
+{
+  #menu-icon
+  {
+    position: absolute;
+    right:2%;
+
+
+  }
+}
+@media only screen and (max-width: 767px) 
+{
+
+  #myNavbar
+  {
+    display: none;
+  }
+
+  #header
+  {
+    padding-left:10%;
+    padding-right:10%;
+  }
+
+  #footer-left
+{
+  text-align: center;
+  font-size: 11px;
+}
+
+#footer-right
+{
+  text-align: center;
+  font-size: 11px;
+}
+
+.para1
+{
+  font-size:15px;
+  padding-left:10%;
+  padding-right:10%;
+}
+
+.left
+{
+  font-size:8px;
+}
+
+.right
+{
+  font-size:8px;
+}
+}
+
+  </style>
+</head>
+
+<body>
+  <!--================================================
+                  Navigation Bar
+    ================================================-->
+<nav class="navbar navbar-inverse" id="header">
+  <div class="container">
+    <div class="navbar-header">
+      <button id="menu-icon" type="button" class="navbar-toggle visible-md-block visible-sm-block visible-xs-block" data-toggle="collapse" >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="Home.html" ><img src="images/logo1.png" style="width: 180px"></a>
+    </div>
+    <div class="navbar-collapse" id="myNavbar">
+
+
+      <ul class="nav navbar-nav hidden-md hidden-sm hidden-xs" id="menu-option">
+        <li class="li_style snip1168"><a href="about.html">ABOUT</a></li>
+       <li class="li_style snip1168"><a href="asset.html">ASSET MANAGEMENT</a></li>
+        <li class="li_style snip1168"><a href="team.html">TEAM</a></li>
+        <li class="li_style snip1168"><a href="https://app.o3securities.com/wealthspectrum/app/login" target="_blank;">LOGIN</a></li>
+      </ul>
+
+
+      <ul class="nav navbar-nav navbar-right hidden-md hidden-sm hidden-xs">
+        <li style="text-align: center"><a href="#"><img class="imgdisp" src="images/logo2.png" width="180px"></a></li>
+      </ul>
+
+
+    </div>
+  </div>
+</nav>
+<!--======================================================
+                  End of Navigation Bar
+  ======================================================-->
+
+<!--=======================================================
+                Menu Layer For Mobile View
+=========================================================-->
+  <div id="mobile-view-menu" style="display: none">
+    <ul>
+        <li><span class="glyphicon glyphicon-remove" id="menu-close"></span></li>
+        <li><a href="about.html"><b>ABOUT</b></a></li>
+        <li><a href="asset.html"><b>ASSET MANAGEMENT</b></a></li>
+        <li><a href="team.html"><b>TEAM</b></a></li>
+        <li><a href="https://app.o3securities.com/wealthspectrum/app/login" target="_blank;">LOGIN</a></li>
+        <li ><a href="#"><img  src="images/logo2.png" width="180px"></a></li>
+    </ul>
+  </div>
+ <!--=======================================================
+                End Of Menu Layer For Mobile View
+=========================================================-->
+    
+    
+    
+  
+
+
+
+<!--=============================================================
+                 This Page Content
+  =========================================================-->
+<div class="container" style="padding-top: 8%;padding-bottom: 6%">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" class="content1">
+
+      <div id="text-carousel" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="row">
+              <div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-sm-offset-1 col-sm-10 " >
+                  <div class="carousel-inner">
+                      <div class="item active">
+                          <div class="carousel-content">
+                              <div>
+                                  <div class="col-md-offset-2 col-md-8" style="font-family: Lora">
+                                  <div class="col-md-12 para">
+                                    <p>WE BUILD YOUR ASSETS ​</p>
+                                  </div>
+                                  <div class="col-md-12">
+                                   <img src="images/line.png" width="50px" style="margin:0 auto;display:block">
+                                 </div>
+                                  <div style="height:300px">
+                                        <div class="col-md-12 para1" style="font-family:Lato; font-weight:300;">
+                                          <p>We are part of o3 Capital Group with more than two and half decades of experience across global capital markets </p></div>
+                               
+                                        <div class="col-md-12 para1" style="font-family:Lato; font-weight:300;">
+                                      
+                                            <p>We manage assets and invest on your behalf ensuring better risk-adjusted returns at lower cost through personalized financial plans</p> 
+                                        </div>
+                                  </div>
+                                </div>
+             
+                                  
+                    </div>
+                          </div>
+                      </div>
+                      <div class="item">
+                          <div class="carousel-content">
+                              <div>
+                                  
+                                  
+                                   <div class="col-md-offset-2 col-md-8" style="font-family: Lora">
+                                    <a href="asset.html" style="text-decoration:none; color:black;                                                                ">    
+                                        <div class="col-md-12 para">
+                                          <p>O3EGA PORTFOLIOS</p> 
+                                        </div>
+                                            
+
+                                        <div class="col-md-12">
+                                            <img src="images/line.png" width="50px" style="margin:0 auto;display:block">
+                                        </div>
+                                       <div style="height:300px"> 
+                                          <div class="col-md-12 para1" style="font-family:Lato; font-weight:300;">
+                                            <p>Pronounced as omega, our portfolios provide investment options for investors with varied risk profiles.</p>
+                                          </div>
+                              
+                                          <div class="col-md-12 para1" style="font-family:Lato; font-weight:300;">
+                                                  <p>
+                                                Smart-indices, at lower cost, customized to serve all your goals and plans - from alpha to o3ega </p>
+                                           </div>
+                                        </div>
+                                       </a> 
+                                    </div>
+                                  
+    
+                              </div>
+                          </div>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+              <!-- Controls --> <a class="left carousel-control" href="#text-carousel" data-slide="prev" style="background: transparent;color: black">
+              <i class="fa fa fa-long-arrow-left fa-3x" aria-hidden="true" style="margin-top:125px"></i>
+            </a>
+           <a class="right carousel-control" href="#text-carousel" data-slide="next" style="background: transparent;color: black">
+              <i class="fa fa fa-long-arrow-right fa-3x" aria-hidden="true" style="margin-top:125px"></i>
+            </a>
+
+
+      </div>
+    </div>
+</div>
+
+
+<!--=============================================================
+                  End Of This Page Content
+  =========================================================-->
+
+
+<!--=============================================================
+                  Footer
+  =========================================================-->
+   <div class="col-sm-12">
+       <div class="container-fluid" id="footer">
+    <div class="row">
+        <div class="col-sm-6" id="footer-left">
+            No.5 Cresoent Road, High Grounds, Bangalore 560001<br>
+            T: +91 80 4241 0000 F: +91 804241 0022<br>
+            contact@o3securities.com<br>
+        </div>
+
+        <div class="col-sm-6" id="footer-right">
+          CIN: U67120KA2008PTC047749<br>
+          SEBI Reg. No’s: PMS:INP000005430, NSE(Cash):INB231345936, NSE(FNO):INB231346034, BSE(Cash):INB011342137, CDSL:IN-DP-CDSL-533-2010<br>
+          For queries or grievances: helpdesk@o3securities.com<br>
+          Disclaimer |<a href="Disclosure.pdf" style="text-decoration:none; color:black">Disclosure</a><br>
+        </div>
+
+
+    </div>
+  </div>
+ </div>
+<!--=============================================================
+                  End Footer
+  =========================================================-->
+
+</body>
+</html>
+
+<!--custom scripts-->
+<script type="text/javascript">
+  $('#menu-icon').click(function(){
+    $("#mobile-view-menu").fadeIn();
+  });
+
+  $('#menu-close').click(function(){
+    $("#mobile-view-menu").fadeOut();
+  });
+</script>
